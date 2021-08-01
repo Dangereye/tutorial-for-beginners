@@ -1,15 +1,15 @@
 import Head from "next/head";
-import Link from "next/link";
+import React from "react";
 
-export default function Home() {
+const about = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
-        <meta name="keywords" content="ninjas home" />
+        <title>Ninja List | About</title>
+        <meta name="keywords" content=" about ninjas" />
       </Head>
       <div>
-        <h2>Homepage</h2>
+        <h2>About</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, veniam
           impedit voluptas cum, deleniti molestiae ullam praesentium eum nulla
@@ -26,10 +26,9 @@ export default function Home() {
           blanditiis dolores consequuntur in vel, rem sunt id voluptates fuga
           expedita fugit commodi nesciunt asperiores!
         </p>
-        <Link href="/ninjas">
-          <a className="btn primary large">See Ninja Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default about;
